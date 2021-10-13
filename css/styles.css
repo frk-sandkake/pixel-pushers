@@ -1,0 +1,38 @@
+body {
+  background-color: #fff;
+}
+
+.header {
+  background-color: #76e4eb;
+  height: 48px;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.inner {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.article {
+  background-color: #315fa4;
+  height: 420px;
+}
+
+.columns {
+  background-color: #ca1dcd;
+}
+
+.columns .column {
+  display: inline-block;
+  height: 220px;
+  width: 30%;
+  border: 1px solid red;
+}
+
+.footer {
+  background-color: #c01887;
+  height: 172px;
+  max-width: 1080px;
+  margin: 0 auto;
+}
