@@ -4,7 +4,7 @@ body {
 
 .header {
   background-color: #76e4eb;
-  height: 48px;
+  height: 3rem;
   max-width: 1080px;
   margin: 0 auto;
 }
@@ -14,25 +14,83 @@ body {
   margin: 0 auto;
 }
 
-.article {
+.hero-content {
+  max-width: 1080px;
   background-color: #315fa4;
-  height: 420px;
+  height: 26.25rem;
+  margin-bottom: 20px;
 }
 
 .columns {
-  background-color: #ca1dcd;
+  display: block;
+  max-width: 1080px;
+  height: 13.75rem;
+  margin: 0 auto;
 }
 
-.columns .column {
-  display: inline-block;
-  height: 220px;
-  width: 30%;
-  border: 1px solid red;
+.column {
+  float: left;
+  height: 13.75rem;
+  width: 100%;
+  background-color: #ca1dcd;
+  margin-bottom: 20px;
+}
+
+.column:nth-child(3) {
+  float: left;
+  height: 13.75rem;
+  width: 100%;
+  background-color: #ca1dcd;
+  margin-bottom: 20px;
 }
 
 .footer {
-  background-color: #c01887;
-  height: 172px;
+  clear: both;
   max-width: 1080px;
   margin: 0 auto;
+}
+
+.content {
+  clear: both;
+  background-color: #c01887;
+  height: 10.75rem;
+  max-width: 1080px;
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 767px) {
+  .columns {
+    max-width: 1080px;
+    height: 13.75rem;
+    margin: 0 auto;
+  }
+
+  .column {
+    float: left;
+    height: 13.75rem;
+    width: 21.66rem;
+    background-color: #ca1dcd;
+    margin-right: 20px;
+  }
+
+  .column:nth-child(3) {
+    float: left;
+    height: 13.75rem;
+    width: 21.66rem;
+    background-color: #ca1dcd;
+    margin: 0 auto;
+  }
+
+  .footer {
+    max-width: 1080px;
+    margin: 0 auto;
+  }
+
+  .content {
+    clear: both;
+    background-color: #c01887;
+    height: 10.75rem;
+    max-width: 1080px;
+    margin-top: 20px;
+  }
 }
