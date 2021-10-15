@@ -4,93 +4,82 @@ body {
 
 .header {
   background-color: #76e4eb;
-  height: 3rem;
-  max-width: 1080px;
+  height: 48px;
+}
+
+.container {
+  max-width: 987px;
+  background-color: transparent;
   margin: 0 auto;
 }
 
-.inner {
-  max-width: 1080px;
-  margin: 0 auto;
-}
-
-.hero-content {
-  max-width: 1080px;
+.hero-banner {
   background-color: #315fa4;
-  height: 26.25rem;
+  height: 420px;
   margin-bottom: 20px;
 }
 
-.columns {
-  display: block;
-  max-width: 1080px;
-  height: 13.75rem;
-  margin: 0 auto;
+.call-to-action {
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 .column {
-  float: left;
-  height: 13.75rem;
-  width: 100%;
   background-color: #ca1dcd;
-  margin-bottom: 20px;
-}
-
-.column:nth-child(3) {
-  float: left;
-  height: 13.75rem;
+  display: block;
+  height: 220px;
   width: 100%;
-  background-color: #ca1dcd;
   margin-bottom: 20px;
 }
 
 .footer {
-  clear: both;
-  max-width: 1080px;
-  margin: 0 auto;
-}
-
-.content {
-  clear: both;
   background-color: #c01887;
-  height: 10.75rem;
-  max-width: 1080px;
-  margin-top: 20px;
+  height: 162px;
 }
 
 @media screen and (min-width: 767px) {
-  .columns {
-    max-width: 1080px;
-    height: 13.75rem;
-    margin: 0 auto;
+  body {
+    background-color: #fff;
+  }
+
+  .header {
+    background-color: transparent;
+  }
+
+  .header .container {
+    background-color: #76e4eb;
+    height: 48px;
+  }
+
+  .hero-banner {
+    background-color: #fff;
+  }
+
+  .hero-banner .container {
+    background-color: #315fa4;
+    height: 420px;
+    margin-bottom: 20px;
   }
 
   .column {
-    float: left;
-    height: 13.75rem;
-    width: 21.66rem;
     background-color: #ca1dcd;
+    display: inline-block;
+    height: 220px;
+    width: 313px;
+    margin-bottom: 0;
     margin-right: 20px;
   }
 
   .column:nth-child(3) {
-    float: left;
-    height: 13.75rem;
-    width: 21.66rem;
-    background-color: #ca1dcd;
     margin: 0 auto;
   }
 
   .footer {
-    max-width: 1080px;
-    margin: 0 auto;
+    background-color: transparent;
   }
 
-  .content {
-    clear: both;
+  .footer .container {
     background-color: #c01887;
-    height: 10.75rem;
-    max-width: 1080px;
-    margin-top: 20px;
+    height: 172px;
   }
 }
