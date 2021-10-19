@@ -24,19 +24,30 @@
   <body>
     <header class="header">
       <div class="container">
-        <div class="logo-box">
-          <a class="logo" href="/">
-            <img src="" alt="" />
-          </a>
-        </div>
+        <a href="/" class="logo">
+          <img src="/images/logo.png" alt="National-Geographic" />
+        </a>
+
         <nav class="navigation">
-          <!-- <ul></ul> -->
-          <div class="hamburger">
+          <label for="hamburger">
+            <span class="sr-only">Hamburger</span>
             <i class="fa fa-bars"></i>
-          </div>
+          </label>
+          <input type="checkbox" name="" id="hamburger" />
+          <ul class="nav-drawer">
+            <a href="/magazines.html">
+              <li>Magazines</li>
+            </a>
+            <a href="/animals.html"><li>Animals</li></a>
+            <a href="/environment.html"><li>Environment</li></a>
+            <li>History & Culture</li>
+            <li>Science</li>
+            <li>Travel</li>
+          </ul>
         </nav>
       </div>
     </header>
+
     <main>
       <section class="hero-banner">
         <div class="container"></div>
