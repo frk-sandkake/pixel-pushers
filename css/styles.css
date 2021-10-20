@@ -18,7 +18,9 @@ body {
 
 img {
   width: 100%;
-  margin: 0 auto 0 auto;
+  height: 100%;
+  margin: 0 auto;
+  display: block;
 }
 
 .header {
@@ -28,14 +30,18 @@ img {
 }
 
 .container {
-  display: flex;
-  justify-content: space-between;
   max-width: 987px;
   margin: 0 auto;
 }
 
+.flex-items {
+  display: flex;
+  justify-content: space-between;
+}
+
 .logo {
   width: 89px;
+  height: 26px;
 }
 
 .navigation a:link {
@@ -64,8 +70,8 @@ label[for="hamburger"] {
 .nav-drawer {
   position: absolute;
   right: -20px;
-  background-color: #fff;
-  padding: 0.5em;
+  background-color: #ffd520;
+  padding: 1em 18em 1em 2em;
   list-style: none;
   transition: all 0.3s linear;
   transform: translateY(-400px);
@@ -89,6 +95,11 @@ label[for="hamburger"] {
   margin-bottom: 20px;
 }
 
+.hero-banner .container {
+  max-width: 987px;
+  height: 420px;
+}
+
 .call-to-action {
   width: 100%;
   margin-bottom: 20px;
@@ -108,10 +119,18 @@ label[for="hamburger"] {
 }
 
 @media screen and (min-width: 767px) {
+  .header {
+    overflow: hidden;
+    height: 44px;
+  }
+
   .nav-drawer {
+    position: absolute;
+    right: 150px;
     transform: translateY(0);
     border-bottom: none;
     padding: 0;
+    margin: 0 auto;
   }
 
   .fa-bars {
@@ -120,11 +139,6 @@ label[for="hamburger"] {
 
   .nav-drawer li {
     display: inline-block;
-  }
-
-  .header {
-    overflow: hidden;
-    height: 44px;
   }
 
   .hero-banner {
